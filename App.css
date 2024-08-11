@@ -1,0 +1,63 @@
+/* .wrapper,
+.charts-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height:90vh;
+}
+
+.charts-wrapper{
+  width:94%;
+  justify-content: space-between;
+  height:auto;
+  padding:2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin:2rem;
+
+} */
+
+.wrapper {
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color for the page */
+  padding: 2rem; /* Padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+.charts-wrapper {
+  display: flex;
+  justify-content: center; /* Center align charts horizontally */
+  flex-wrap: wrap; /* Allow charts to wrap if needed */
+  gap: 2rem; /* Space between charts */
+  padding: 2rem; /* Padding around the charts */
+  max-width: 1200px; /* Maximum width to center the content */
+  margin: auto; /* Center horizontally on the page */
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align chart titles and charts */
+  flex: 1;
+}
+
+.chart-title {
+  margin-top: 0; /* Remove default margin */
+  font-size: 1.5rem; /* Font size for titles */
+  font-weight: 600; /* Font weight for titles */
+  text-align: center; /* Center align title text */
+}
+
+.line-chart {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Maximum width of the line chart */
+}
+
+.pie-chart {
+  width: 100%; /* Full width of the container */
+  max-width: 300px; /* Maximum width of the pie chart */
+}
+

@@ -1,0 +1,43 @@
+.my-row {
+    display: flex;
+    justify-content: center; /* Center align cards horizontally */
+    align-items: center; /* Center align cards vertically if needed */
+    margin: 1rem ; /* Center row container horizontally */
+    
+    flex-wrap: nowrap; /* Ensure cards don't wrap to the next line */
+    gap: 16px; /* Spacing between cards */
+}
+
+.ant-card-head-title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.my-card {
+    box-shadow: var(--shadow);
+    border-radius: 0.5rem;
+    min-width: 300px; /* Minimum width of cards */
+    flex: 1; /* Ensure cards grow to fit available space */
+    background-color: var(--white); /* Background color for better visibility */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Space out content vertically */
+    padding: 1.5rem; /* Increased padding inside the card */
+}
+
+.my-card h2 {
+    margin-top: 0; /* Remove top margin for title */
+    font-size: 1.2rem; /* Font size for titles */
+}
+
+.my-card p {
+    margin: 0;
+    font-size: 1.5rem; /* Font size for balance values */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.my-card .ant-btn {
+    margin-top: auto; /* Push button to the bottom */
+    width: 100%; /* Full width button */
+    border-radius: 0.5rem; /* Rounded corners for button */
+}

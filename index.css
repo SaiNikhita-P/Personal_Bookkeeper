@@ -1,0 +1,228 @@
+/* 
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+ --theme: #2970ff;
+ --black:#000;
+ --white:#fff;
+ --shadow: 0px 0px 30px 8px rgba(227,227,227,0.75);
+}
+body {
+  margin: 0;
+  font-family: "Monteserrat",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input{
+  font-family: "Monteserrat","sans-serif";
+}
+
+.custom-input{
+  border-width: 0;
+  border-bottom-width: 1px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.custom-input{
+  margin-top: -1rem !important;
+}
+.custom-input:focus{
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input::placeholder{
+  color:grey;
+
+}
+
+.input-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+
+.input-flex input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+}
+
+.input-flex input:focus {
+  outline: none;
+} */
+
+/*start from here*/
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --theme: #2970ff;
+  --black: #000;
+  --white: #fff;
+  --shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-input {
+  border-width: 0;
+  border-bottom-width: 1px;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: -1rem !important;
+}
+
+.custom-input:focus {
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input::placeholder {
+  color: grey;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.input-flex input {
+  width: 90%;
+  padding: 0.5rem;
+  border: 0;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.select-input {
+  width: 30%;
+  margin-right: 10;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem !important;
+  padding: 0.2rem 0.5rem;
+}
+
+
+
+.select-input > div {
+  border: 0px solid #fff !important;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --theme: #4a90e2; /* Updated theme color */
+  --black: #000;
+  --white: #fff;
+  --shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+  --primary-text: #333; /* Slightly lighter text color */
+  --secondary-text: #666; /* Secondary text color */
+  --background: #f7f7f7; /* Light background color */
+  --input-border: #ddd; /* Subtle border color for inputs */
+  --input-focus-border: #4a90e2; /* Theme color for input focus border */
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary-text);
+  background-color: var(--background);
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-input {
+  border-width: 0;
+  border-bottom-width: 2px; /* Thicker border for better visibility */
+  border-bottom-color: var(--input-border);
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem; /* Slightly larger font size */
+  opacity: 0.9;
+  margin-top: -1rem !important;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-bottom-color: var(--input-focus-border); /* Change border color on focus */
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input::placeholder {
+  color: var(--secondary-text);
+}
+
+.input-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  background-color: var(--white); /* Background color for input flex container */
+}
+
+.input-flex input {
+  width: 90%;
+  padding: 0.5rem;
+  border: 0;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.select-input {
+  width: 30%;
+  margin-right: 10px; /* Fixed margin value */
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--white); /* Background color for select input container */
+  border: 1px solid var(--input-border); /* Subtle border for select inputs */
+}
+
+.select-input > div {
+  border: 0px solid #fff !important;
+}
